@@ -8,14 +8,6 @@ string no_telp;
 class Method {
 public:
 
-	void daftar_pulsa() {
-		cout << "\n   Silahkan pilih nominal pengisian " << endl;
-		cout << "   1 <---10.000           3 <---50.000" << endl;
-		cout << "   2 <---20.000           4 <---100.000" << endl;
-		cout << "   Masukkan pilihan Anda(1-4): ";
-		cin >> pilih_pulsa;
-	}
-
 	int pilihan_pulsa() {
 		switch (pilih_pulsa) {
 		case 1:
@@ -67,6 +59,14 @@ public:
 		}
 	}
 };
+
+void daftar_pulsa() {
+	cout << "\n   Silahkan pilih nominal pengisian " << endl;
+	cout << "   1 <---10.000           3 <---50.000" << endl;
+	cout << "   2 <---20.000           4 <---100.000" << endl;
+	cout << "   Masukkan pilihan Anda(1-4): ";
+	cin >> pilih_pulsa;
+}
 
 int main() {
 
