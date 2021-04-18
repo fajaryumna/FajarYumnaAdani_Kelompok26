@@ -45,7 +45,6 @@ public:
 	}
 
 	void last() {
-		daftar_pulsa();
 		if (pilihan_pulsa() == 0) {
 			cout << "\n   Maaf INPUT yang Anda lakukan salah!!!" << endl;
 		}
@@ -92,6 +91,7 @@ int main() {
 		cout << "   Masukan nomor telepon Anda : ";
 		cin >> no_telp;
 		if (isp == 1 || isp == 2 || isp == 3 || isp == 4) {
+			daftar_pulsa();
 			app.last();
 		}
 		else {
